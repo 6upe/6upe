@@ -11632,6 +11632,23 @@ html {
   fill: #1e30f3;
 }
 
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0);
+  }
+  40% {
+      transform: translateX(-100px);
+  }
+  60% {
+      transform: translateX(-15px);
+  }
+}
+.bounce {
+  display: inline-block;
+  animation: bounce 3s infinite;
+}
+
 @media (min-width: 576px) {
   .profile {
     height: 60vw;
