@@ -38,43 +38,75 @@
             <!-- Projects Section-->
             <section class="py-5">
                 <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-
+                    <h1 class=" text-center fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <div class="text-center m-5 sticky-top">
                         
-                            <div class="d-flex justify-content-center mt-5 mb-0">
-                                <a class="btn btn-primary btn-sm" href="#">Graphics Design</a>
-                                <a class="btn btn-outline-dark btn-sm mx-2" href="#">Software Development</a>
-                                <a class="btn btn-outline-dark btn-sm" href="#">Networking</a>
-                            </div>
-
-                            <p class="text-dark mt-3 bounce text-gradient fw-bolder"> 
-                                > Switch Projects >
-                            </p>
-                        
-                        
+                        <div class="d-flex justify-content-center mt-5 mb-0">
+                            <a class="btn btn-primary btn-sm" href="#" id="btnGraphics">Graphics Design</a>
+                            <a class="btn btn-outline-dark btn-sm mx-2" href="#" id="btnSoftware">Software Development</a>
+                            <a class="btn btn-outline-dark btn-sm" href="#" id="btnNetworking">Networking</a>
+                        </div>
+                        <p class="text-dark mt-3 bounce text-gradient fw-bolder">
+                            > Switch Projects >
+                        </p>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
+                        <div class="col-lg-11 col-xl-9 col-xxl-8" id="Graphics">
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <div class="img-container">
+                                                <img class="img-fluid w-100 p-2" id="graphicsImage" src="./assets/demo.jpg" alt="..." />
+                                            </div>
+                                            
+                                            <div class="w-100 justify-content-center">
+                                                <div class="text-center">
+                                                    <i id="prevGraphics" class="bi bi-arrow-left-circle"></i>
+                                                    <i class="mx-5"></i>
+                                                    <i id="nextGraphics" class="bi bi-arrow-right-circle"></i>
+                                                </div>
+                                            </div>
+                                            <h2 class="fw-bolder">Graphics Design Project</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="">
+                                                    <i class="bi bi-heart"></i>
+                                                    <i class="bi bi-chat-dots mx-3"></i>
+                                                    <i class="bi bi-share"></i>
+                                                </div>
+
+                                                <div class="">
+                                                    <i class="bi bi-arrows-fullscreen"></i>
+                                                </div>
+
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-xl-9 col-xxl-8 hidden" id="Software">
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
                                             <img class="img-fluid w-100 p-2" src="./assets/demo.jpg" alt="..." />
-                                            <h2 class="fw-bolder">Project Name 1</h2>
+                                            <h2 class="fw-bolder">Software Development Project</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Project Card 2-->
+                        </div>
+                        <div class="col-lg-11 col-xl-9 col-xxl-8 hidden" id="Networking">
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
                                             <img class="img-fluid w-100 p-2" src="./assets/demo.jpg" alt="..." />
-                                            <h2 class="fw-bolder">Project Name 1</h2>
+                                            <h2 class="fw-bolder">Networking Project</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
                                         </div>
                                     </div>
@@ -103,8 +135,13 @@
                 </div>
             </div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
